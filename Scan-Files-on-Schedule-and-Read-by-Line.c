@@ -45,7 +45,6 @@ static void trave_dir(char* path)
             char filename_tail[10001];
             strcpy(filename_tail, dp->d_name);
             strcat(filename, filename_tail);
-            printf ("fn-%s\n", filename);
             if ((fp = fopen(filename, "r")) == NULL)
             {
                 printf ("open filename fail...\n");
